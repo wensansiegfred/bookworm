@@ -1,5 +1,7 @@
 #BookWorm - React/Node project
+
 This project is taken from Remchi tutorial/code https://github.com/Remchi/bookworm-react
+
 Additional Info:
 - MySQL instead of Mongo
 - Webpack instead of Yarn
