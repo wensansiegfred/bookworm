@@ -7,9 +7,9 @@ export default {
 				return res.data.user;
 			})
 		},
-		signup: function(user) {
-			axios.post("/api/users", { user }).then(function(res) {
-				return res.data.user;	
+		signup: function(user) {						
+			return axios.post("/api/users", { user }).then(function(res) {
+				return res.data.user;
 			})
 		}
 	}
