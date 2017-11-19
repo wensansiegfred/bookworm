@@ -6,6 +6,7 @@ import DashboardPage from "./components/pages/DashboardPage";
 import SignUpPage from "./components/pages/SignUpPage";
 import UserRoute from "./components/routes/UserRoute";
 import GuestRoute from "./components/routes/GuestRoute";
+import ForgotPasswordPage from "./components/pages/ForgotPasswordPage";
 import PropTypes from "prop-types";
 
 const App = ({ location }) => (	
@@ -13,6 +14,7 @@ const App = ({ location }) => (
 		<Route location={ location } path="/" exact component={HomePage} />
 		<GuestRoute location={ location } path="/signup" exact component={SignUpPage} />
 		<GuestRoute location={location} path="/login" exact component={LoginPage} />
+		<GuestRoute location={ location } path="/forgot_password" exact component={ForgotPasswordPage} />
 		<UserRoute location={ location } path="/dashboard" exact component={DashboardPage} />
 	</div>
 );
